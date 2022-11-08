@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<!-- Favicon-->
+	<link rel="icon" type="image/x-icon" href="Assets/favicon.png" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!-- font awesome CDN -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@100&display=swap"
+		rel="stylesheet">
+
+	<!-- google jaquery cdn -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!-- external css -->
+	<link rel="stylesheet" href="index.css">
+
+	<title>Mossaddak</title>
+</head>
+
+<body>
+
+	<!--======================= cursor ==================-->
+	<div class="cursor"></div>
+	<div class="cursor2"></div>
+
+	<div class="preloader"></div>
+
+	
+	
+
+	<!--======================= banner ==================-->
+	<section class="banner bg-primary" id="HOME">
+
+		
+		<a href="#!"><img src="Assets/logo.png" alt="logo" class="logo"></a>
+		<div class="banner_text">
+			<h2>Mossaddak</h2>
+			<p>Web Developer</p>
+
+			<div class="banner_btn fira_font">
+				<a href="#!" class="hireme_BTN"><span></span>Hire ME</a>
+				<a href="#!" class="skill_BTN"><span></span>My Skills</a>
+			</div>
+		</div>
+
+
+	
+
+		<!-- hireme modal box -->
+		<div class="hireMeModal ">
+
+			<!-- modal close btn -->
+			<button class="CloseHireMeModalBtn"><i class="far fa-times"></i></button>
+
+			<div class="modal_body ">
+
+				<div class="HireMeContentContainer">
+					<h2 class="fira_font ModalTitle">Hire Me</h2>
+
+					<form action="#!" class="HireMeForm">
+						<!-- name -->
+						<div class="InputContainerHireMe">
+							<label class="poppins_font">Full Name</label>
+							<input type="text" class="poppins_font" required>
+						</div>
+
+						<!-- email -->
+						<div class="InputContainerHireMe">
+							<label class="poppins_font">Email</label>
+							<input type="email" class="poppins_font" required>
+						</div>
+
+						<!-- services -->
+						<div class="InputContainerHireMe">
+							<label class="poppins_font">Select Service</label>
+							<select class="poppins_font">
+								<option value="0" class="poppins_font">Dynamic Website</option>
+								<option value="1" class="poppins_font">Static Website</option>
+								<option value="2" class="poppins_font">Backend Service</option>
+								<option value="3" class="poppins_font">Database Service</option>
+							</select>
+						</div>
+
+						<!-- file -->
+						<div class="InputContainerHireMe">
+							<label class="poppins_font">Upload File (PSD/XD...) <small class="NotRequiredTag">not
+									required</small></label>
+							<label class="HireMeFormFileUploadingContainer">
+								Choose File &nbsp;<i class="fas fa-upload"></i>
+								<input type="file">
+							</label>
+
+						</div>
+
+						<!-- message area -->
+						<div class="InputContainerHireMe">
+							<label class="poppins_font">Describe About Your Project</label>
+							<textarea class="poppins_font" rows="7"></textarea>
+						</div>
+
+						<button type="submit" class="HireMeFormSubmitBtn poppins_font">Send Request</button>
+					</form>
+				</div>
+
+
+			</div>
+
+		</div>
+
+		<!-- skill modal box -->
+		<div class="SkillModal">
+			<!-- modal close btn -->
+			<button  class="CloseSkillModalBtn"><i class="far fa-times"></i></button>
+
+			<div class="modal_body ">
+
+				<!-- skill container row -->
+				<div class="SkillContainerRow">
+
+					<!-- frontend development -->
+					<div class="SingleSkillContainerColumn">
+						<h2 class="fira_font ModalSkillTitle">Frontend</h2>
+						<ul class="fira_font">
+							<li>Html5</li>
+							<li>Css3</li>
+							<li>Bootstrap 5,4</li>
+							<li>JS</li>
+							<li>jQuery</li>
+						</ul>
+					</div>
+
+
+					<!-- backend development -->
+					<div class="SingleSkillContainerColumn">
+						<h2 class="fira_font ModalSkillTitle">Backend</h2>
+						<ul class="fira_font">
+							<li>Python</li>
+							<li>Django</li>
+							<li>SQLite</li>
+							<li>MySQL</li>
+							<li>PostgreSql</li>
+						</ul>
+					</div>
+					
+				</div>
+
+				<!-- projects container row -->
+				<div class="ProjectContainer">
+					
+					<h2 class="fira_font ProjectTitle">Projects</h2>
+
+					<!-- projects container -->
+					<div class="ProjectContainerRow fira_font">
+						<!-- total projects -->
+						<div class="ProjectSingleCardCol">
+							<div class="NumberOfProjects counter">38</div>
+							<h6 class="ProjectHeading">Total Projects</h6>
+						</div>
+
+						<!-- total frontend projects -->
+						<div class="ProjectSingleCardCol">
+							<div class="NumberOfProjects counter">31</div>
+							<h6 class="ProjectHeading">Static Websites</h6>
+						</div>
+
+						<!-- total complete website projects -->
+						<div class="ProjectSingleCardCol">
+							<div class="NumberOfProjects counter">7</div>
+							<h6 class="ProjectHeading">Dynamic Websites</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- for enjoying this featurs just uncomment then refresh your website
+		<div class="animated_effector_container">
+			<img src="Assets/animated-effect-imgs/effect-img-1.png" alt="animation effect img">
+			<img src="Assets/animated-effect-imgs/effect-img-2.png" alt="animation effect img">
+			<img src="Assets/animated-effect-imgs/effect-img-3.png" alt="animation effect img">
+			<img src="Assets/animated-effect-imgs/effect-img-4.png" alt="animation effect img">
+			<img src="Assets/animated-effect-imgs/effect-img-5.png" alt="animation effect img">
+			<img src="Assets/animated-effect-imgs/effect-img-6.png" alt="animation effect img">
+			<img src="Assets/animated-effect-imgs/effect-img-7.png" alt="animation effect img">
+			<img src="Assets/animated-effect-imgs/effect-img-8.png" alt="animation effect img">
+			<img src="Assets/animated-effect-imgs/effect-img-9.png" alt="animation effect img">
+			<img src="Assets/animated-effect-imgs/effect-img-10.png" alt="animation effect img">
+		</div>
+	    -->
+		
+		
+	</section>
+
+	<!-- booster -->
+	<a href="#HOME" class="boster"><i class="fas fa-angle-double-up"></i></a>
+
+	<!--======================= sidenav ==================-->
+	<div class="sideNav fira_font">
+		<nav>
+			<ul>
+				<li><a href="#HOME">HOME</a></li>
+				<li><a href="#WHYME">WHY ME</a></li>
+				<li><a href="#SERVICES">SERVICES</a></li>
+				<li><a href="#TESTIMONIALS">TESTIMONIALS</a></li>
+				<li><a href="#MEETME">MEET ME</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<a href="#!" class="manuBtn">
+		<img src="Assets/menu.png" class="manuIcon" alt="manu bar">
+		<img src="Assets/close.png" class="manuIcon deactiveNavCloseAndManuBTN" alt="navbar closing icon">
+	</a>
+
+	<!--======================= whyme me ==================-->
+	<section class="whyme" id="WHYME">
+		<div class="title_text fira_font reveal fade-bottom">
+			<p>WHY ME</p>
+			<h2>I Focus On</h2>
+		</div>
+
+		<div class="whyme_box ">
+			<div class="whymes reveal fade-left">
+
+				<h1 class="">Understanding Your Needs</h1>
+				<div class="whyme_desc">
+					<div class="whyme_icon">
+						<i class="fas fa-brain"></i>
+					</div>
+					<div class="whyme_text poppins_font">
+						<p>
+							Firstly, important the design, cause customer the credibility of the business based on firstst impression
+						</p>
+					</div>
+				</div>
+
+				<h1>Technology</h1>
+				<div class="whyme_desc">
+					<div class="whyme_icon">
+						<i class="fas fa-cogs"></i>
+					</div>
+					<div class="whyme_text poppins_font">
+						<p>
+							Secondly, Software should have a powefull backend to perform the all functionality accuratly
+						</p>
+					</div>
+				</div>
+
+				<h1>Support</h1>
+				<div class="whyme_desc ">
+					<div class="whyme_icon">
+						<i class="fas fa-hands-helping"></i>
+					</div>
+					<div class="whyme_text poppins_font">
+						<p>
+							I always prefer the latest technology to built the application faster and more efficient.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="whymes_img reveal fade-right">
+				<img src="Assets/website's-author-img.jpg" alt="website authr's image">
+			</div>
+
+		</div>
+	</section>
+
+	<!--======================= services ==================-->
+	<section class="services fira_font" id="SERVICES">
+		<div class="service_title_text reveal fade-bottom">
+			<p>SERVICES</p>
+			<h2>I Provide</h2>
+		</div>
+
+		<!-- category nav -->
+		<div class="service_nav_container reveal fade-bottom">
+			<ul class="category_list_container poppins_font">
+				<li class="category_btn category_btn_active inital_active" data-filter="Services">Services </li>
+				<li class="category_btn" data-filter="StaticWebsite">Static Websites</li>
+				<li class="category_btn" data-filter="BackendServices">Backend Demo</li>
+				<li class="category_btn" data-filter="DynamicWebsite">Dynamic Websites</li>
+				<li class="category_btn" data-filter="ForClients">For Clients</li>
+			</ul>
+		</div>
+
+		<!-- service information -->
+		<div class="services_box Services service_itembox reveal fade-bottom">
+
+
+			<div class="single_service">
+				<img src="Assets/pic-1.jpg" alt="service image">
+				<div class="overlay"></div>
+				<div class="service_desc">
+					<h3>Custome Website With Django</h3>
+					<hr>
+					<p>I build all types of website. Like <b>Portfolio, Business, e-Commerse, Educational website</b>
+					</p>
+				</div>
+			</div>
+
+
+			<div class="single_service">
+				<img src="Assets/pic-2.jpg" alt="service image">
+				<div class="overlay"></div>
+				<div class="service_desc">
+					<h3>Frontend</h3>
+					<hr>
+					<p>I also build static website with letest technology. Just send me your design</p>
+				</div>
+			</div>
+
+
+			<div class="single_service">
+				<img src="Assets/pic-3.jpg" alt="service image">
+				<div class="overlay"></div>
+				<div class="service_desc">
+					<h3>Backend</h3>
+					<hr>
+					<p>If you have frontend send me it, just send me it. I'll make it dynamic website with admin
+						dashboard</p>
+				</div>
+			</div>
+
+
+			<div class="single_service">
+				<img src="Assets/pic-4.jpg" alt="service image">
+				<div class="overlay"></div>
+				<div class="service_desc">
+					<h3>Technology</h3>
+					<hr>
+					<div>
+						<p style="line-height: 0.4;"><b>Frontend:</b> Html, CSS, Bootstrap 5, JS, jQuery</p>
+						<p style="line-height: 0.4;"><b>Backend:</b> Python, Django, MySql, SQLite, PostgreSql</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- static website -->
+		<div class="services_box StaticWebsite service_itembox">
+
+
+			<div class="single_service bg_white">
+				<div class="single_service_card_body">
+					<h2 class="fira_font service_card_heading" style="text-align: center; font-size:15px;">No Item Added</h2>
+				</div>
+			</div>
+
+
+
+
+		</div>
+
+		<!-- backend services -->
+		<div class="services_box BackendServices service_itembox">
+
+
+			<div class="single_service card_border bg_white">
+				<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6986656732416540672" title="Backend Service Demo"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+				<div class="single_service_card_body">
+					<h2 class="fira_font service_card_heading">Medicine Shop</h2>
+					<small class="poppins_font service_card_update_time">Last updated 1 month, 3 weeks ago</small>
+					<hr>
+					<p class="service_info">
+						It's made for a local client.
+					</p>
+				</div>
+
+			</div>
+
+
+			
+		</div>
+
+		<!-- dynamic websites -->
+		<div class="services_box DynamicWebsite service_itembox">
+			<div class="single_service card_border bg_white">
+				<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6964346122651799552"
+					title="Dynamic Website Service Demo"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+
+				<div class="single_service_card_body">
+					<h2 class="fira_font service_card_heading">MentalHealthAwareness</h2>
+					<small class="poppins_font service_card_update_time">Last updated 1 month, 3 weeks ago</small>
+				</div>
+
+			</div>
+		</div>
+
+
+
+		<!-- for clients -->
+		<div class="services_box ForClients service_itembox">
+
+			<div class="single_service card_border bg_white">
+				<iframe src="https://www.youtube.com/embed/FSPQQQN_Svk"
+					title="For Clients"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+
+				<div class="single_service_card_body">
+					<h2 class="fira_font service_card_heading">Mosque Management System</h2>
+					<small class="poppins_font service_card_update_time">Last updated 1 month, 3 weeks ago</small>
+					<hr>
+					<p class="service_info">
+						<b>It's made for a local client.</b> All item is added as a muslim needs.
+					</p>
+				</div>
+
+			</div>
+			
+
+			<div class="single_service bg_white">
+				<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6986656732416540672"
+					title="Dynamic Website Service Demo"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+				<div class="single_service_card_body">
+					<h2 class="fira_font service_card_heading">Business lessons from</h2>
+					<small class="poppins_font service_card_update_time">Last updated 8 month, 1 weeks ago</small>
+					<hr>
+					<p class="service_info">
+						I've built the website for a local client, the selling medicines and medical equipment via this website is the motive.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--======================= testimonials ==================-->
+	<section class="testimonials" id="TESTIMONIALS">
+		<div class="title_text fira_font reveal fade-bottom">
+			<p>TESTIMONIAL</p>
+			<h2>What Client Says</h2>
+		</div>
+
+		<div class="testemonial_row">
+			<div class="testemonial_column reveal fade-left">
+				<div class="user">
+					<img src="Assets/img-1.jpg" alt="client profile picture">
+					<div class="user_info">
+						<h4 class="fira_font">KEN NORMAN <i class="fab fa-twitter"></i></h4>
+						<small class="cool">@kennorman</small>
+					</div>
+				</div>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitationo.
+				</p>
+			</div>
+			<div class="testemonial_column reveal fade-bottom">
+				<div class="user">
+					<img src="Assets/img-2.jpg" alt="client profile picture">
+					<div class="user_info">
+						<h4 class="fira_font">Liara Kerian <i class="fab fa-twitter"></i></h4>
+						<small>@liarakerian</small>
+					</div>
+				</div>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore enim ad minim.
+				</p>
+			</div>
+			<div class="testemonial_column reveal fade-left">
+				<div class="user">
+					<img src="Assets/img-3.jpg" alt="client profile picture">
+					<div class="user_info">
+						<h4 class="fira_font">Ricky Danial <i class="fab fa-twitter"></i></h4>
+						<small>@rickydanial</small>
+					</div>
+				</div>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!--======================= footer ==================-->
+	<footer class="footer" id="MEETME">
+		<img src="Assets/footer-img.png" class="footer_img" alt="footer backgroung effet image">
+		<div class="title_text fira_font reveal fade-bottom">
+			<p>CONTACT</p>
+			<h2>Contact Me Online</h2>
+		</div>
+		<!--row-->
+		<div class="footer_row">
+			<div class="footer_col_left reveal fade-left">
+				<h4 class="fira_font">Office Hours</h4>
+				<p><i class="far fa-clock"></i> Monday to Friday-9am to 9pm</p>
+				<p><i class="far fa-clock"></i> Satarday and Sunday- 8am to 11pm</p>
+			</div>
+
+			<div class="footer_col_right reveal fade-right">
+				<h4 class="fira_font">Get In Touch</h4>
+				<p>#Dhaka, Bangladesh <i class="fas fa-map-marker-alt"></i></p>
+				<p>demo@gmail.com <i class="fas fa-paper-plane"></i></p>
+				<p>+88******** <i class="fas fa-phone-alt"></i></p>
+			</div>
+		</div>
+
+		<!--social media icon-->
+		<div class="social_media_icon reveal fade-bottom">
+			<div><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+			<div><a href="#"><i class="fab fa-instagram"></i></a></div>
+			<div><a href="#"><i class="fab fa-twitter"></i></a></div>
+			<div><a href="#"><i class="fab fa-youtube"></i></a></div>
+		</div>
+		<div class="copy_right reveal fade-bottom fira_font">copyright <i class="far fa-copyright"></i> 2022 Mossaddak</div>
+	</footer>
+
+	
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!--======================= external js ==================-->
+	<script src="side_nav.js"></script>
+	<script src="cursor.js"></script>
+	<script src="services.js"></script>
+	<script src="hireme.js"></script>
+	<script src="my_skill.js"></script>
+	<script src="scroll.js"></script>
+	<script src="preloader.js"></script>
+	<script src="boost_btn.js"></script>
+	
+	
+</body>
+
+</html>
